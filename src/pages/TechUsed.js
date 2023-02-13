@@ -18,7 +18,8 @@ const TechUsed = () => {
           'axios' package for API calls<br/>
           Node.js (npm)<br/>
           Git<br/>
-          Heroku for app deployment and hosting
+          Heroku for app deployment and serving<br/>
+          <a href='https://id.ie'>ID.ie for hosting</a>
         </p>
 
         <span>Front end</span>

@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import { Route, Routes } from 'react-router-dom';
 import Home from "./pages/Home";
 import TechUsed from "./pages/TechUsed";
+import Contact from "./pages/Contact";
 import './index.css';
 
 function App() {
@@ -18,10 +19,10 @@ function App() {
   const fetchData = async () => {
 		try {
 
-			// const catFactResponse = await axios.get(`https://catfact.ninja/fact`);
-      // const weatherResponse = await axios.get(`https://api.open-meteo.com/v1/forecast?latitude=53.3498&longitude=-6.2603&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m`);
-      const catFactResponse = {data: {fact: 'The first cat show was in 1871 at the Crystal Palace in London.'}};
-      const weatherResponse = {data: {current_weather: { temperature: 10, weathercode: 3 }}};
+			const catFactResponse = await axios.get(`https://catfact.ninja/fact`);
+      const weatherResponse = await axios.get(`https://api.open-meteo.com/v1/forecast?latitude=53.3498&longitude=-6.2603&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m`);
+      // const catFactResponse = {data: {fact: 'The first cat show was in 1871 at the Crystal Palace in London.'}};
+      // const weatherResponse = {data: {current_weather: { temperature: 10, weathercode: 3 }}};
       
       setResponse({
         catFactResponse: catFactResponse.data,
@@ -40,6 +41,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tech-used" element={<TechUsed />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer props={response}/>
     </div>

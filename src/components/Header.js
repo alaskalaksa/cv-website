@@ -44,7 +44,7 @@ export default function Header(props) {
         <Menu width={ 200 }>
           <Link to="/" className='menu-item'>Home</Link>
           <Link to="/tech-used" className='menu-item'>Tech Used</Link>
-          <Link to="/tech-used" className='menu-item'>Contact</Link>
+          <Link to="/contact" className='menu-item'>Contact</Link>
        </Menu>
 
         Dublin | {props.props && props.props.weatherResponse.current_weather.temperature}°C &nbsp; {<WeatherIcon code={props.props && props.props.weatherResponse.current_weather.weathercode}/>}

@@ -8,7 +8,7 @@ export default function Footer(props) {
   return (
     <div className='psuedo-footer'>
 
-        Random cat fact: { props.props && props.props.catFactResponse.fact }
+        <span className="pink">Random cat fact: { props.props && props.props.catFactResponse.fact }</span>
 
         <div className='logoBar'>
         <a href='https://www.linkedin.com/in/aalasa-fidler'><FontAwesomeIcon icon={faLinkedin} /></a>&nbsp;

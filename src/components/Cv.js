@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-
 const Cv = () => {
   return (
     
