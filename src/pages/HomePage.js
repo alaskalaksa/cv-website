@@ -1,7 +1,6 @@
-import {React,  useState, useEffect } from 'react';
+import {React } from 'react';
 
 import Header from '../components/Header';
-// import { blogList } from '../config/Api';
 
 const HomePage = ({data}) => {
 

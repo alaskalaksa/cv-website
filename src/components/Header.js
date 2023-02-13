@@ -1,8 +1,8 @@
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, light } from '@fortawesome/fontawesome-svg-core/import.macro'
-import { faLinkedin, faDeploydog } from '@fortawesome/free-brands-svg-icons'
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { slide as Menu } from 'react-burger-menu'
 
 import Cv from '../components/Cv';
@@ -48,10 +48,10 @@ export default function Header() {
   const fetchData = async () => {
 		try {
 
-			// const catFactResponse = await axios.get(`https://catfact.ninja/fact`);
-      // const weatherResponse = await axios.get(`https://api.open-meteo.com/v1/forecast?latitude=53.3498&longitude=-6.2603&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m`);
-      const catFactResponse = {data: {fact: 'The first cat show was in 1871 at the Crystal Palace in London.'}};
-      const weatherResponse = {data: {current_weather: { temperature: 10, weathercode: 3 }}};
+			const catFactResponse = await axios.get(`https://catfact.ninja/fact`);
+      const weatherResponse = await axios.get(`https://api.open-meteo.com/v1/forecast?latitude=53.3498&longitude=-6.2603&current_weather=true&hourly=temperature_2m,relativehumidity_2m,windspeed_10m`);
+      // const catFactResponse = {data: {fact: 'The first cat show was in 1871 at the Crystal Palace in London.'}};
+      // const weatherResponse = {data: {current_weather: { temperature: 10, weathercode: 3 }}};
       
       setResponse({
         catFactResponse: catFactResponse.data,
@@ -96,7 +96,7 @@ export default function Header() {
           <div className='logoBar'>
             <a href='https://www.linkedin.com/in/aalasa-fidler'><FontAwesomeIcon icon={faLinkedin} /></a>&nbsp;
             <a href='https://www.pawshake.ie/petsitters/knocklyon-county-dublin/friendly-responsible-capable-techie-who-loves-dogs-cdruLxpLELP'><FontAwesomeIcon icon={solid('dog')} /></a>&nbsp;
-            <a href=''><FontAwesomeIcon icon={solid('briefcase')} /></a>
+            <a href='/'><FontAwesomeIcon icon={solid('briefcase')} /></a>
              | Built with React <FontAwesomeIcon icon={solid('heart')} size="2xs" beat className="pink" />
           </div>
           </p>
