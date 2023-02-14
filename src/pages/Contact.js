@@ -12,7 +12,7 @@ const Contact = () => {
         <br/>
         <p>
             <a href='www.linkedin.com/in/aalasa-fidler'><FontAwesomeIcon icon={faLinkedin} /> www.linkedin.com/in/aalasa-fidler</a><br/>
-            <a href = 'mailto: fidlera@tcd.ie'><FontAwesomeIcon icon={solid('envelope')} /> fidlera@tcd.ie</a><br/>
+            <a href = 'mailto: aalasafidler@gmail.com'><FontAwesomeIcon icon={solid('envelope')} /> aalasafidler@gmail.com</a><br/>
             <FontAwesomeIcon icon={faWhatsapp} /> +353862112976<br/>
             <a href = '/'><FontAwesomeIcon icon={solid('globe')} /> Aalasa Fidler | Dublin-based Software Developer and Cronut Enthusiast</a><br/>
         </p>

@@ -12,7 +12,7 @@ const Cv = () => {
       <p>
         <a href='www.linkedin.com/in/aalasa-fidler'><FontAwesomeIcon icon={faLinkedin} /> www.linkedin.com/in/aalasa-fidler</a><br/>
         <FontAwesomeIcon icon={solid('briefcase')} /> EU/Swedish national<br/>
-        <a href = 'mailto: fidlera@tcd.ie'><FontAwesomeIcon icon={solid('envelope')} /> fidlera@tcd.ie</a><br/>
+        <a href = 'mailto: aalasafidler@gmail.com'><FontAwesomeIcon icon={solid('envelope')} /> aalasafidler@gmail.com</a><br/>
         <a href = 'tel: 353862112976'><FontAwesomeIcon icon={solid('phone')} />+353862112976</a>
       </p>
       <br/>
