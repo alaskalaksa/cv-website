@@ -36,7 +36,7 @@ function App() {
 	};
 
   return (
-    <div style={{ backgroundImage: "url(/orange3.png)", backgroundRepeat: 'no-repeat' }}>
+    <div style={{ backgroundImage: "url(/orange3.png)", backgroundSize: 'cover' }}>
       <Header props={response}/>
       <Routes>
         <Route path="/" element={<Home />} />
